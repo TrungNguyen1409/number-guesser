@@ -21,9 +21,13 @@ const compareGuesses = (humGuess, comGuess, target) => {
   }
 
   function updateScore(winner){
-    if('human'){
+    if(winner === 'human'){
       humanScore += 1;
     }else{
-      computerScore += 1;
+      computerScore = computerScore + 1;
     }
+  }
+
+  function advanceRound(){
+    return currentRoundNumber += 1;
   }
