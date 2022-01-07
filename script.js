@@ -19,3 +19,11 @@ const compareGuesses = (humGuess, comGuess, target) => {
       return true;
     }
   }
+
+  function updateScore(winner){
+    if('human'){
+      humanScore += 1;
+    }else{
+      computerScore += 1;
+    }
+  }
